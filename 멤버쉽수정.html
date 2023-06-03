@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원 가입 페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@800&family=IBM+Plex+Sans+KR:wght@300&family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: azure;
+            text-align: center;
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Hahmlet', serif;
+        }
+        #name:hover {
+            background-color: lavender;
+            cursor: pointer;
+        }
+        #photo:hover {
+            background-color: lavenderblush;
+            cursor: pointer;
+        }
+        #female:hover {
+            background-color: lime;
+            cursor: pointer;
+        }
+        #male:hover {
+            background-color: limegreen;
+            cursor: pointer;
+        }
+        #birthdate_gregorian:hover {
+            background-color: lightcoral;
+            cursor: pointer;
+        }
+        #birthdate_lunar:hover {
+            background-color: lightpink;
+            cursor: pointer;
+        }
+        #age:hover {
+            background-color: lemonchiffon;
+            cursor: pointer;
+        }
+        #address:hover {
+            background-color: lightsalmon;
+            cursor: pointer;
+        }
+        #reason:hover {
+            background-color: lightsteelblue;
+            cursor: pointer;
+        }
+        Footer {
+            text-align: center;
+            font-family: 'Song Myung', serif;
+        }
+    </style>
+</head>
+<body>
+	<h1>회원 가입 페이지</h1>
+	<form>
+		<label for="이름">이름:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="사진">사진:</label>
+		<input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+		<label for="성별">성별:</label><br>
+		<input type="radio" id="female" name="gender" value="female" checked>
+		<label for="여자">여</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="남자">남</label><br><br>
+
+		<label for="생년월일(양력)">생년월일(양력):</label>
+		<input type="date" id="birthdate_gregorian" name="birthdate_gregorian"><br><br>
+
+		<label for="생년월일(음력)">생년월일(음력):</label>
+		<input type="date" id="birthdate_lunar" name="birthdate_lunar"><br><br>
+
+		<label for="나이">나이:</label>
+		<input type="number" id="age" name="age"><br><br>
+
+		<label for="주소">주소:</label>
+		<input type="text" id="address" name="address"><br><br>
+
+		<label for="가입 이유">가입 이유:</label><br>
+		<select id="reason" name="reason">
+			<option>네트워킹</option>
+			<option>취업/진로</option>
+			<option>취미/관심사</option>
+			<option>기타</option>
+		</select><br><br>
+
+		<input type="submit" value="가입">
+	</form>
+    <p></p>
+    <footer>2302559 안리경</footer>
+</body>
+</html>
